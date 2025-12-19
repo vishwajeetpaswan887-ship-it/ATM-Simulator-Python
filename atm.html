@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Machine</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+        .atm-box {
+            width: 350px;
+            margin: 100px auto;
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        input, button {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+        }
+        button {
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        h2 {
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="atm-box">
+    <h2>🏧 Python ATM</h2>
+
+    <form method="POST">
+        <input type="password" name="pin" placeholder="Enter PIN" required>
+        <input type="number" name="amount" placeholder="Enter Amount">
+        
+        <button name="action" value="balance">Check Balance</button>
+        <button name="action" value="deposit">Deposit</button>
+        <button name="action" value="withdraw">Withdraw</button>
+    </form>
+
+    <p><b>{{ message }}</b></p>
+</div>
+
+</body>
+</html>
